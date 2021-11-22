@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+
+
+
 html, body {
     width: 100%;
     height: 100%;
@@ -9,11 +15,16 @@ html, body {
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Spartan', Montserrat, sans-serif;
     color: rgb(34, 34, 35);
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.5em;
-    font-weight: 300;
+    font-weight: 600;
+}
+
+.headline-font {
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: lighter;
 }
 
 ol, ul {
@@ -36,9 +47,9 @@ h2 {
 }
 
 h5 {
-    font-weight: 400;
+    font-weight: 600;
     font-stretch: normal;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.3em;
     text-transform: uppercase;
     margin: 0.8em 0 0.5em 0;
@@ -149,7 +160,7 @@ h5 {
 } */
 
 a {
-    font-weight: 400;
+    font-weight: 600;
     color: rgba(184, 139, 95);
     text-decoration: none;
 }
@@ -269,24 +280,31 @@ section.first, section.second {
     0% {
         margin-top: -270px;
     }
+
     5% {
         margin-top: -180px;
     }
+
     33% {
         margin-top: -180px;
     }
+
     38% {
         margin-top: -90px;
     }
+
     66% {
         margin-top: -90px;
     }
+
     71% {
         margin-top: 0px;
     }
+
     99.99% {
         margin-top: 0px;
     }
+
     100% {
         margin-top: -270px;
     }
@@ -419,6 +437,14 @@ header .wrapper-button .book-now {
     font-size: 13px;
     line-height: 13px;
     padding: 18px 35px;
+}
+
+.book-now span:after {
+    content: "\f291";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: white;
+    font-size: 25px;
 }
 
 /* Hero
@@ -655,7 +681,7 @@ form input {
 }
 
 form input:not([type=submit]) {
-    font-size: 13px;
+    font-size: 11px;
     padding: 0;
     margin: 0;
     height: 38px;
@@ -666,6 +692,7 @@ form input:not([type=submit]) {
     border-bottom: 2px solid #eee;
     width: 100%;
     float: left;
+    font-weight: 600;
 }
 
 form .input.firstname {
@@ -768,11 +795,11 @@ footer .wrapper-social li img {
 }
 
 footer p.headline {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 footer .wrapper-imprint {
-    font-size: 13px;
+    font-size: 11px;
 }
 
 footer .wrapper-imprint .row:last-child {
@@ -821,8 +848,8 @@ footer .wrapper-imprint a {
     padding-top: 18px;
     padding-bottom: 18px;
     letter-spacing: 1.2px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 13px;
-    font-size: 13px;
+    font-size: 11px;
     background-color: white;
 }
