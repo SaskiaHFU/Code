@@ -22,7 +22,7 @@ body {
     font-weight: 600;
 }
 
-.headline-font {
+.headline-font, #change-words div p {
     font-family: 'Tenor Sans', sans-serif;
     font-weight: lighter;
 }
@@ -274,6 +274,8 @@ section.first, section.second {
     height: 45px;
     margin-bottom: 45px;
     display: inline-block;
+    color: rgba(184, 139, 95);
+    font-size: 30px;
 }
 
 @keyframes show {
