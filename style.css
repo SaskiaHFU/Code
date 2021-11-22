@@ -178,6 +178,15 @@ section.first, section.second {
     margin-bottom: 1rem;
 }
 
+.w-450 {
+    max-width: 450px;
+
+}
+
+.w-710 {
+    max-width: 710px;
+}
+
 /* Effects
 ---------------------------------------- */
 
@@ -194,9 +203,11 @@ section.first, section.second {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-15px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -206,9 +217,11 @@ section.first, section.second {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-15px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -241,7 +254,7 @@ section.first, section.second {
 }
 
 #change-words div:first-child {
-    animation: show 2s linear infinite;
+    animation: show 5s linear infinite;
 }
 
 #change-words>div>p {
@@ -252,7 +265,7 @@ section.first, section.second {
     display: inline-block;
 }
 
-/* @keyframes show {
+@keyframes show {
     0% {
         margin-top: -270px;
     }
@@ -277,37 +290,45 @@ section.first, section.second {
     100% {
         margin-top: -270px;
     }
-} */
+}
 
-@keyframes show {
+/* @keyframes show {
     0% {
         opacity: 0;
     }
+
     5% {
         opacity: 0.25;
     }
+
     20% {
         opacity: 0.5;
     }
+
     35% {
         opacity: 0.75;
     }
+
     50% {
         opacity: 1;
     }
+
     66% {
         opacity: 0.75;
     }
+
     75% {
         opacity: 0.5;
     }
+
     85% {
         opacity: 0.25;
     }
+
     100% {
         opacity: 0;
     }
-}
+} */
 
 /* Menu
 ---------------------------------------- */
@@ -504,10 +525,6 @@ header .wrapper-button .book-now {
     margin-top: 17%;
 }
 
-.third .wrapper-img.w-450 {
-    max-width: 450px;
-    /* margin-left: 50px; */
-}
 
 .third img {
     max-width: 100%;
