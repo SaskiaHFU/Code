@@ -2,7 +2,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
 
+@font-face {
+    font-family: 'Brown-Light';
+    src: url('Fonts/lineto-brown-light.woff2') format('woff2'),
+        url('Fonts/lineto-brown-light.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Brown';
+    src: url('Fonts/lineto-brown-regular.woff2') format('woff2'),
+        url('Fonts/lineto-brown-regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beausite-Light';
+    src: url('Fonts/BeausiteSlick-Light-Web.woff') format('woff2'),
+        url('Fonts/BeausiteSlick-Light-Web.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html, body {
     width: 100%;
@@ -15,7 +37,7 @@ html, body {
 
 body {
     margin: 0;
-    font-family: 'Spartan', Montserrat, sans-serif;
+    font-family: 'Brown-Light', 'Spartan', Montserrat, sans-serif;
     color: rgb(34, 34, 35);
     font-size: 13px;
     line-height: 1.5em;
@@ -23,7 +45,7 @@ body {
 }
 
 .headline-font, #change-words div p {
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Beausite-Light', 'Tenor Sans', sans-serif;
     font-weight: lighter;
 }
 

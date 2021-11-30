@@ -4,9 +4,7 @@ var $ = jQuery;
 
 $(document).ready(function () {
     $(window).scroll(function (e) {
-
         e.preventDefault();
-        console.log("scroll");
 
         // Scroll Icon
 
