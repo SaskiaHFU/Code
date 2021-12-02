@@ -36,12 +36,19 @@ html, body {
 }
 
 body {
-    margin: 0;
     font-family: 'Brown-Light', 'Spartan', Montserrat, sans-serif;
     color: rgb(34, 34, 35);
     font-size: 13px;
     line-height: 1.5em;
     font-weight: 600;
+  
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    vertical-align: baseline;
+
 }
 
 .headline-font, #change-words div p {
