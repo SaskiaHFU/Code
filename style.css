@@ -1005,21 +1005,23 @@ footer .wrapper-imprint a {
         display: none;
     }
 
-    /* Second */
-    .second .img-wrapper {
-        position: absolute;
+    .first .wrapper-text, .first .wrapper-text p {
+        margin-left: 0;
     }
+
+    /* Second */
 
     .second .wrapper-text, .third .wrapper-text, .fifth .wrapper-text, .six .wrapper-text {
         margin-top: 0;
     }
 
-    .second .wrapper-img {
-        margin-left: 20rem;
+    .second .img-wrapper .img-drawing {
+        margin-left: 50%;
+        margin-top: 50px;
     }
 
-    .second .img-wrapper .img-drawing {
-        max-width: 200px;
+    .second .wrapper-img, .second .wrapper-img img {
+        margin-left: 0;
     }
 
     .third .col-6 .wrapper-img {
