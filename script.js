@@ -24,17 +24,19 @@ $(document).ready(function () {
             $(".to-bottom-icon").css("display", "block");
         }
 
+        if ($(window).width() > 1200) {
+            $panel.each(function () {
+                let $this = $(this);
 
-        $panel.each(function () {
-            let $this = $(this);
+                if ($this.position().top <= scroll) {
+                    $(".to-top-icon").css("display", "block");
 
-            if ($this.position().top <= scroll) {
-                $(".to-top-icon").css("display", "block");
+                } else {
+                    $(".to-top-icon").css("display", "none");
+                }
+            });
+        }
 
-            } else {
-                $(".to-top-icon").css("display", "none");
-            }
-        });
 
 
         // HERO --------------------------------------------------------------
