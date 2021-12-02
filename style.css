@@ -41,7 +41,7 @@ body {
     font-size: 13px;
     line-height: 1.5em;
     font-weight: 600;
-  
+
 
     margin: 0px;
     padding: 0px;
@@ -1022,8 +1022,12 @@ footer .wrapper-imprint a {
         margin-top: 0;
     }
 
-    .second .img-wrapper, .third .col-6 .wrapper-img {
+    .third .col-6 .wrapper-img {
         margin-left: 50%;
+    }
+
+    .second .img-wrapper .img-drawing {
+        max-width: 100%;
     }
 
     .second .img-wrapper .img-drawing, .third .col-6 .wrapper-img, .fourth .row, .fourth .img, .fifth .row {
