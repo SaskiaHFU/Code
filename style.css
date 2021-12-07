@@ -231,7 +231,7 @@ section.first, section.second {
     max-width: 710px;
 }
 
-.w-
+
 /* Effects
 ---------------------------------------- */
 
@@ -511,6 +511,7 @@ header .wrapper-button .book-now {
     position: fixed;
     right: 2rem;
     bottom: 4rem;
+    z-index: 999;
 }
 
 .wrapper-icon .to-bottom-icon {
