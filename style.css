@@ -472,7 +472,7 @@ header .wrapper-button .book-now {
 .book-now {
     font-size: 13px;
     line-height: 13px;
-    padding: 18px 35px;
+    padding: 15px 32px;
 }
 
 .book-now span:after {
@@ -896,9 +896,13 @@ footer .wrapper-imprint a {
 
 /* Media Queries
 ------------------------------------------------------------- */
+@media (max-width: 1400px) {
+    h1, h2 {
+        line-height: 100%;
+    }
+}
 
 @media (max-width: 1200px) {
-
     h2, #change-words>div>p {
         font-size: 22px;
     }
