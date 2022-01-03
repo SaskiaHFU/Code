@@ -194,6 +194,10 @@ a {
     text-decoration: none;
 }
 
+a.link:hover, a.link:active, a.link:focus {
+    color: rgba(199, 153, 108);
+}
+
 section.first, section.second {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -395,6 +399,7 @@ section.first, section.second {
     position: absolute;
     left: 80px;
     top: 0;
+    cursor: pointer;
 }
 
 header {
@@ -459,6 +464,7 @@ button {
     letter-spacing: 1.2px;
     font-weight: 400;
     border: none;
+    cursor: pointer;
 }
 
 header .wrapper-button .book-now {
@@ -467,6 +473,10 @@ header .wrapper-button .book-now {
     right: 110px;
     position: fixed;
     z-index: 40;
+}
+
+header .wrapper-button .book-now:hover, header .wrapper-button .book-now:active, header .wrapper-button .book-now:focus {
+    background-color: rgba(199, 153, 108);
 }
 
 .book-now {
@@ -767,6 +777,11 @@ form input[type="submit"] {
     width: auto;
 }
 
+form input[type="submit"]:hover, form input[type="submit"]:active, form input[type="submit"]:focus {
+    background: #c7996c;
+    color: #fff;
+}
+
 form input.email, form input.postcode {
     margin-top: 18px;
 }
@@ -892,6 +907,65 @@ footer .wrapper-imprint a {
     line-height: 13px;
     font-size: 11px;
     background-color: white;
+}
+
+.cta-bottom .wrapper-icon a:hover, .cta-bottom .wrapper-icon a:active, .cta-bottom .wrapper-icon a:focus {
+    color: rgba(255, 255, 255);
+    background-color: rgba(184, 139, 95);
+    border-color: rgba(184, 139, 95);
+}
+
+footer .footer-link:hover, footer .footer-link:active, footer .footer-link:focus {
+    color: rgba(34, 34, 35);
+    cursor: pointer;
+}
+
+footer .social-part li {
+    cursor: pointer;
+}
+
+footer .social-part .overlay {
+    background-color: rgba(118, 139, 162, 0);
+    position: absolute;
+    top: 85.5%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-out;
+    z-index: 2;
+    font-size: 13px;
+}
+
+footer .social-part .ig-caption {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: auto;
+    max-height: 60%;
+    color: #fff;
+    text-align: left;
+    transform: translateX(-50%) translateY(-60%);
+    overflow: hidden;
+    line-height: 16px;
+}
+
+footer .social-part .instalogo {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    padding: 25px 20px;
+    color: #fff;
+}
+
+footer .social-part .instalogo p {
+    margin-right: 0.5rem;
+}
+
+footer .social-part li:hover .overlay {
+    background-color: rgba(184, 139, 95, .7);
+    top: 0;
+    color: #fff;
 }
 
 /* Media Queries
