@@ -3,6 +3,15 @@ var $ = jQuery;
 //-----------------------------------------
 
 $(document).ready(function () {
+
+    $thumbnailWidth = $("footer .wrapper-social li").width();
+    $("footer .wrapper-social li").css("height", $thumbnailWidth + "px");
+
+    $(".to-top-icon").click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+    });
+
+
     $(window).scroll(function (e) {
         e.preventDefault();
 
@@ -17,11 +26,13 @@ $(document).ready(function () {
 
         if ($(this).scrollTop() > $sectionHeight) {
             $(".to-bottom-icon").css("display", "none");
+            $(".navbar .wrapper-icon.menu-open").css("top", "-50px");
 
         }
 
         if ($(this).scrollTop() < $sectionHeight) {
             $(".to-bottom-icon").css("display", "block");
+            $(".navbar .wrapper-icon.menu-open").css("top", "0px");
         }
 
         if ($(window).width() > 1200) {
@@ -67,6 +78,32 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+
+    // Menu
+    $(".menu-open").on("click", function () {
+        $(".menu-toggle").addClass("open");
+        $("div.nav").animate({ top: 0 });
+
+    });
+    $(".nav .menu-toggle").on("click", function () {
+        console.log("click");
+        $(".menu-toggle").removeClass("open");
+        $("div.nav").animate({ top: "-100%" });
+    });
+
+    // CTA
+    let click = false;
+    $("#choose").on("click", function () {
+
+        if (click == false) {
+            $(".wrapper-choose").css("display", "block");
+            click = true;
+        } else {
+            $(".wrapper-choose").css("display", "none");
+            click = false;
+        }
+
+    });
 
     // Give animations class to slide up when they are in view
     var $animation_elements = $('.animate-up');

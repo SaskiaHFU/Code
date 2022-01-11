@@ -453,6 +453,65 @@ header .menu-icon {
     opacity: 1;
 }
 
+/* Navbar
+---------------------------------------- */
+
+.nav {
+    display: block;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 50;
+    background-size: cover;
+    transition: transform .6s cubic-bezier(.76, 0, .24, 1);
+    width: 100vw;
+}
+
+.nav .row {
+    margin: 0;
+}
+
+.nav .wrapper-left, .nav .wrapper-right {
+    height: 100vh;
+}
+
+.nav .wrapper-left {
+    background-color: rgba(244, 244, 242);
+    text-align: left;
+}
+
+.nav .wrapper-right {
+    background-color: #fff;
+    padding: 10% 100px;
+}
+
+.nav .wrapper-icon.menu-toggle {
+    top: 50px;
+}
+
+.nav #menu {
+    padding: 175px 250px 40px;
+}
+
+.nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1.35em;
+    color: #4a4a4a;
+    display: block;
+    margin: 0 0 10px;
+}
+
+
+
+
 /* Buttons
 ---------------------------------------- */
 
@@ -495,6 +554,10 @@ header .wrapper-button .book-now:hover, header .wrapper-button .book-now:active,
 
 /* Hero
 ---------------------------------------- */
+.hero {
+    max-height: 100vh;
+    overflow: hidden;
+}
 
 .hero .row {
     margin: 0;
@@ -503,10 +566,12 @@ header .wrapper-button .book-now:hover, header .wrapper-button .book-now:active,
 .wrapper-hero {
     height: 100%;
     object-fit: cover !important;
+    max-height: 100vh;
 }
 
 .hero .wrapper-hero img {
     max-width: 100%;
+    width: 100%;
 }
 
 .wrapper-icon {
@@ -522,6 +587,7 @@ header .wrapper-button .book-now:hover, header .wrapper-button .book-now:active,
     right: 2rem;
     bottom: 4rem;
     z-index: 999;
+    cursor: pointer;
 }
 
 .wrapper-icon .to-bottom-icon {
@@ -832,11 +898,9 @@ footer h5 {
 }
 
 footer .wrapper-social li {
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     width: calc(50% - 20px);
-    height: auto;
+    /* height: auto; */
     margin: 10px;
     float: left;
     overflow: hidden;
@@ -846,7 +910,9 @@ footer .wrapper-social li img {
     display: block;
     vertical-align: middle;
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 footer p.headline {
@@ -888,31 +954,59 @@ footer .wrapper-imprint a {
     color: rgba(196, 196, 196);
 }
 
-.cta-bottom .wrapper-icon {
+/* CTA */
+
+.cta-bottom .wrapper-absolute {
     position: absolute;
     right: 110px;
-    /* bottom: 130px; */
+    top: unset;
+    left: unset;
     display: inline-block;
     position: fixed;
 }
 
-.cta-bottom .wrapper-icon a {
+.cta-bottom .wrapper-icon {
+    background-color: white;
     border: 1px solid rgba(196, 196, 196);
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 18px;
     padding-bottom: 18px;
+}
+
+.cta-bottom .wrapper-icon p {
     letter-spacing: 1.2px;
     font-weight: 600;
     line-height: 13px;
     font-size: 11px;
-    background-color: white;
+    cursor: pointer;
 }
 
-.cta-bottom .wrapper-icon a:hover, .cta-bottom .wrapper-icon a:active, .cta-bottom .wrapper-icon a:focus {
+.cta-bottom .wrapper-icon:hover, .cta-bottom .wrapper-icon:active, .cta-bottom .wrapper-icon:focus {
     color: rgba(255, 255, 255);
     background-color: rgba(184, 139, 95);
     border-color: rgba(184, 139, 95);
+}
+
+footer .wrapper-choose {
+    display: none;
+    background-color: #fff;
+    border: 1px solid rgba(196, 196, 196);
+}
+
+.cta-bottom .wrapper-choose li {
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    text-align: center;
+    color: rgba(184, 139, 95);
+}
+
+.cta-bottom .wrapper-choose li:hover,
+.cta-bottom .wrapper-choose li:active,
+.cta-bottom .wrapper-choose li:focus {
+    color: rgba(34, 34, 35);
+    cursor: pointer;
 }
 
 footer .footer-link:hover, footer .footer-link:active, footer .footer-link:focus {
@@ -945,7 +1039,7 @@ footer .social-part .ig-caption {
     max-height: 60%;
     color: #fff;
     text-align: left;
-    transform: translateX(-50%) translateY(-60%);
+    transform: translateX(-50%) translateY(-40%);
     overflow: hidden;
     line-height: 16px;
 }
@@ -956,6 +1050,7 @@ footer .social-part .instalogo {
     bottom: 0;
     padding: 25px 20px;
     color: #fff;
+    font-size: 10px;
 }
 
 footer .social-part .instalogo p {
