@@ -26,13 +26,16 @@ $(document).ready(function () {
 
         if ($(this).scrollTop() > $sectionHeight) {
             $(".to-bottom-icon").css("display", "none");
-            $(".navbar .wrapper-icon.menu-open").css("top", "-50px");
-
+            if ($(window).width() >= 1200) {
+                $(".navbar .wrapper-icon.menu-open").css("top", "-50px");
+            }
         }
 
         if ($(this).scrollTop() < $sectionHeight) {
             $(".to-bottom-icon").css("display", "block");
-            $(".navbar .wrapper-icon.menu-open").css("top", "0px");
+            if ($(window).width() < 1200) {
+                $(".navbar .wrapper-icon.menu-open").css("top", "0px");
+            }
         }
 
         if ($(window).width() > 1200) {
@@ -83,12 +86,15 @@ $(document).ready(function () {
     $(".menu-open").on("click", function () {
         $(".menu-toggle").addClass("open");
         $("div.nav").animate({ top: 0 });
-
+        $(".nav .wrapper-icon.menu-toggle").css("display", "block");
+        $("body").css("ovrflow-x", "hidden");
     });
     $(".nav .menu-toggle").on("click", function () {
         console.log("click");
         $(".menu-toggle").removeClass("open");
         $("div.nav").animate({ top: "-100%" });
+        $(".nav .wrapper-icon.menu-toggle").css("display", "none");
+        $("body").css("ovrflow-x", "visible");
     });
 
     // CTA
@@ -97,9 +103,11 @@ $(document).ready(function () {
 
         if (click == false) {
             $(".wrapper-choose").css("display", "block");
+            $(".cta-bottom .wrapper-icon p").html("CLOSE SELECTION");
             click = true;
         } else {
             $(".wrapper-choose").css("display", "none");
+            $(".cta-bottom .wrapper-icon p").html("CHOOSE CATEGORY");
             click = false;
         }
 
