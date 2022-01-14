@@ -442,9 +442,13 @@ header .menu-icon {
     text-align: left;
 }
 
+.nav .wrapper-left, .nav .wrapper-right {
+    padding: 5% 100px;
+}
+
 .nav .wrapper-right {
     background-color: #fff;
-    padding: 10% 100px;
+
 }
 
 .nav .wrapper-icon.menu-toggle {
@@ -452,14 +456,15 @@ header .menu-icon {
     display: none;
 }
 
-.nav #menu {
+/* .nav #menu {
     padding: 175px 250px 40px;
-}
+} */
 
 .nav ul {
     margin: 0;
     list-style-type: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 .nav li {
@@ -493,6 +498,8 @@ header .menu-icon {
 
 .nav form {
     max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .nav form input[type="submit"] {
@@ -584,6 +591,7 @@ header .wrapper-button .book-now:hover, header .wrapper-button .book-now:active,
     margin-right: 4rem;
     right: 0;
     bottom: 0;
+    cursor: pointer;
 }
 
 .bg-mobile {
@@ -705,7 +713,7 @@ header .wrapper-button .book-now:hover, header .wrapper-button .book-now:active,
 } */
 
 .fourth .img {
-    max-width: 100%;
+    max-width: 500px;
 }
 
 /* Fifth
@@ -1059,9 +1067,9 @@ footer .social-part li:hover .overlay {
         line-height: 100%;
     }
 
-    .nav #menu {
+    /* .nav #menu {
         padding: 125px 150px 30px 180px;
-    }
+    } */
 }
 
 @media (max-width: 1200px) {
