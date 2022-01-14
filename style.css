@@ -1093,8 +1093,9 @@ form input[type="submit"] {
     .bg-mobile {
         display: block;
         object-fit: cover;
-        height: 100vh;
+        max-height: 100vh;
         width: auto;
+        height: 600px;
 
     }
 
@@ -1110,6 +1111,10 @@ form input[type="submit"] {
 
     header .wrapper-button .book-now {
         right: 0;
+    }
+
+    #change-words>div>p {
+        padding-left: 0;
     }
 
     footer .col-6 {
@@ -1189,6 +1194,14 @@ form input[type="submit"] {
     .nav .wrapper-left {
         height: 50vh;
     }
+
+    .nav ul:first-child {
+        text-align: center;
+    }
+
+    #menu {
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -1236,16 +1249,17 @@ form input[type="submit"] {
     }
 
     .second .wrapper-img {
-        width: 690px;
+        width: 500px;
         margin-left: auto;
         margin-right: auto;
+        max-width: 100%;
     }
 
     .second .wrapper-img img {
         margin-left: auto;
     }
 
-    .third .wrapper-img.wrapper-img.third-draw img {
+    .third .wrapper-img.third-draw {
         display: none;
     }
 
@@ -1257,6 +1271,11 @@ form input[type="submit"] {
 
     .fifth .wrapper-img {
         margin-left: auto;
+        max-width: 100%;
+    }
+
+    .fifth .img {
+        margin-top: 0;
     }
 
     .six .wrapper-text {
@@ -1303,6 +1322,23 @@ form input[type="submit"] {
 
     .nav .wrapper-left {
         height: 35vh;
+    }
+
+    .second .img-wrapper .img-drawing {
+        float: unset;
+        max-width: 100%;
+    }
+
+    .third .col-6 .wrapper-img {
+        margin-left: 0;
+    }
+
+    .third .col-7, .third .col-4 {
+        width: 100%;
+    }
+
+    .third .wrapper-img.m-up {
+        margin-top: 40px;
     }
 
     .fourth .img {
