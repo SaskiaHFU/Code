@@ -421,7 +421,7 @@ header .menu-icon {
 .nav {
     display: block;
     position: fixed;
-    top: -100%;
+    top: -100vh;
     left: 0;
     z-index: 50;
     background-size: cover;
@@ -452,8 +452,9 @@ header .menu-icon {
 }
 
 .nav .wrapper-icon.menu-toggle {
-    top: 50px;
+    top: 30px;
     display: none;
+    left: 30px;
 }
 
 /* .nav #menu {

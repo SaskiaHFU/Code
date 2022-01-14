@@ -100,7 +100,7 @@ $(document).ready(function () {
     $(".nav .menu-toggle").on("click", function () {
         console.log("click");
         $(".menu-toggle").removeClass("open");
-        $("div.nav").animate({ top: "-100%" });
+        $("div.nav").animate({ top: "-100vh" });
         $(".nav .wrapper-icon.menu-toggle").css("display", "none");
         // $(".nav").css("display", "none");
         $("body").css("ovrflow-x", "visible");
