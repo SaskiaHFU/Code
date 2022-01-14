@@ -95,7 +95,7 @@ $(document).ready(function () {
         $("div.nav").animate({ top: 0 });
         $(".nav .wrapper-icon.menu-toggle").css("display", "block");
         // $(".nav").css("display", "block");
-        $("body").css("ovrflow-x", "hidden");
+        $("body").css("overflow-x", "hidden");
     });
     $(".nav .menu-toggle").on("click", function () {
         console.log("click");
@@ -103,7 +103,7 @@ $(document).ready(function () {
         $("div.nav").animate({ top: "-100vh" });
         $(".nav .wrapper-icon.menu-toggle").css("display", "none");
         // $(".nav").css("display", "none");
-        $("body").css("ovrflow-x", "visible");
+        $("body").css("overflow-x", "visible");
     });
 
     // CTA
