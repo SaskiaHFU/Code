@@ -504,7 +504,6 @@ header .menu-icon {
 }
 
 .nav form input[type="submit"] {
-    margin-left: 10px;
     font-size: 10px;
 }
 
@@ -821,7 +820,7 @@ form .input.lastname {
 }
 
 form .input.postcode {
-    width: calc(100% - 125px);
+    width: 100%
 }
 
 form input[type="submit"] {
@@ -1061,6 +1060,15 @@ footer .social-part li:hover .overlay {
     color: #fff;
 }
 
+footer .wrapper-consent {
+    display: block;
+}
+
+form input[type="submit"] {
+    margin-left: 0;
+}
+
+
 /* Media Queries
 ------------------------------------------------------------- */
 @media (max-width: 1400px) {
@@ -1146,9 +1154,7 @@ footer .social-part li:hover .overlay {
     }
 
     /* Fifth --------- */
-    .fifth .wrapper-img {
-        max-width: 300px;
-    }
+
 
     /* Footer -------- */
     footer .acknowledge {
@@ -1203,7 +1209,7 @@ footer .social-part li:hover .overlay {
         display: none;
     }
 
-    .first .wrapper-text, .first .wrapper-text p, .second .wrapper-img, .second .wrapper-img img {
+    .first .wrapper-text, .first .wrapper-text p, .second .wrapper-img {
         margin-left: 0;
     }
 
@@ -1220,15 +1226,33 @@ footer .social-part li:hover .overlay {
     }
 
     .second .img-wrapper .img-drawing {
-        max-width: 100%;
+        max-width: 500px;
+        float: right;
+        margin-top: 0;
     }
 
     .second .img-wrapper .img-drawing, .third .col-6 .wrapper-img, .fourth .row, .fourth .img, .fifth .row {
         margin-top: 50px;
     }
 
+    .second .wrapper-img {
+        width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .second .wrapper-img img {
+        margin-left: auto;
+    }
+
     .third .wrapper-img.wrapper-img.third-draw img {
         display: none;
+    }
+
+    .fourth .wrapper-img {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .fifth .wrapper-img {
@@ -1237,6 +1261,12 @@ footer .social-part li:hover .overlay {
 
     .six .wrapper-text {
         margin-bottom: 50px;
+    }
+
+    .six .wrapper-img {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .six .wrapper-img img {
@@ -1254,6 +1284,8 @@ footer .social-part li:hover .overlay {
     footer .wrapper-consent {
         margin-bottom: 0;
     }
+
+
 }
 
 @media (max-width: 600px) {
@@ -1281,5 +1313,5 @@ footer .social-part li:hover .overlay {
         margin-left: 0;
     }
 
-    
+
 }
