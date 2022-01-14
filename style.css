@@ -1250,6 +1250,10 @@ footer .social-part li:hover .overlay {
     footer ul.imprint {
         float: unset;
     }
+
+    footer .wrapper-consent {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1268,4 +1272,14 @@ footer .social-part li:hover .overlay {
     .nav .wrapper-left {
         height: 35vh;
     }
+
+    .fourth .img {
+        max-width: 100%;
+    }
+
+    .fifth .img {
+        margin-left: 0;
+    }
+
+    
 }
