@@ -303,7 +303,7 @@ section.first, section.second {
 }
 
 #change-words div:first-child {
-    animation: show 5s linear infinite;
+    animation: show 8s linear infinite;
 }
 
 #change-words>div>p {
@@ -316,7 +316,7 @@ section.first, section.second {
     font-size: 30px;
 }
 
-@keyframes show {
+/* @keyframes show {
     0% {
         margin-top: -270px;
     }
@@ -348,6 +348,72 @@ section.first, section.second {
     100% {
         margin-top: -270px;
     }
+} */
+
+@keyframes show {
+    0% {
+        margin-top: -630px;
+    }
+
+    6.67% {
+        margin-top: -540px;
+    }
+
+    13.33% {
+        margin-top: -540px;
+    }
+
+    20% {
+        margin-top: -450px;
+    }
+
+    26.67% {
+        margin-top: -450px;
+    }
+
+    33.34% {
+        margin-top: -360px;
+    }
+
+    40.1% {
+        margin-top: -360px;
+    }
+
+    46.68% {
+        margin-top: -270px;
+    }
+
+    53.35% {
+        margin-top: -270px;
+    }
+
+    60.02% {
+        margin-top: -180px;
+    }
+
+    66.69% {
+        margin-top: -180px;
+    }
+
+    73.36% {
+        margin-top: -90px;
+    }
+
+    80.03% {
+        margin-top: -90px;
+    }
+
+    86.70% {
+        margin-top: 0px;
+    }
+
+    93.37% {
+        margin-top: 0px;
+    }
+
+    /* 100% {
+        margin-top: -630px;
+    } */
 }
 
 /* Menu

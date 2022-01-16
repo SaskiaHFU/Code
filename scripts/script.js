@@ -87,7 +87,7 @@ $(document).ready(function () {
         $("div.nav").animate({ top: 0 });
         $(".nav .wrapper-icon.menu-toggle").css("display", "block");
         // $(".nav").css("display", "block");
-        $("body").css("overflow-x", "hidden");
+        $("body").css("overflow-y", "hidden");
 
        
     });
@@ -97,7 +97,7 @@ $(document).ready(function () {
         $("div.nav").animate({ top: "-100vh" });
         $(".nav .wrapper-icon.menu-toggle").css("display", "none");
         // $(".nav").css("display", "none");
-        $("body").css("overflow-x", "visible");
+        $("body").css("overflow-y", "visible");
     });
 
     // CTA
