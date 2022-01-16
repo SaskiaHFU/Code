@@ -397,22 +397,17 @@ header .img-wrapper.logo {
     margin-left: -100px;
 }
 
-header .link img.logo {
+header .link img.logo-img {
     width: 100%;
 }
 
-header img.logo {
+header img.logo-img {
     max-width: 100%;
 }
 
 header .menu-icon {
     position: fixed;
     z-index: 40;
-}
-
-.logo.scroll {
-    transform: translate(0%, -50%);
-    opacity: 1;
 }
 
 /* Navbar
@@ -527,6 +522,20 @@ header .wrapper-button .book-now {
     right: 110px;
     position: fixed;
     z-index: 40;
+}
+
+header .wrapper-button .search {
+    right: 168px;
+}
+
+header .wrapper-button .user {
+    right: 228px;
+}
+
+header .wrapper-button .search:hover,
+header .wrapper-button .user:hover,
+header .wrapper-button .cart:hover {
+    z-index: 50;
 }
 
 header .wrapper-button .book-now:hover, header .wrapper-button .book-now:active, header .wrapper-button .book-now:focus {

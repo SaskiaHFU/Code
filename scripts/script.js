@@ -63,15 +63,6 @@ $(document).ready(function () {
         // HERO --------------------------------------------------------------
         $('.change-bg').css('opacity', 1 - $(window).scrollTop() / 1000);
 
-        // let $logoUp = $('.logo').offset().top;
-        // if ($(window).scrollTop() > logoUp) {
-        //     $('.logo').addClass('scroll');
-        //     $('.the-hero, .bouncer').css('opacity', 1 - $(window).scrollTop() / 1000);
-        //   } else {
-        //     $('.logo').removeClass('scroll');
-        //     $('.the-hero, .bouncer').css('opacity', 1);
-        //   }
-
 
         // CTA Button right bottom sticky
         if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
@@ -91,14 +82,17 @@ $(document).ready(function () {
 
     // Menu
     $(".menu-open").on("click", function () {
+
         $(".menu-toggle").addClass("open");
         $("div.nav").animate({ top: 0 });
         $(".nav .wrapper-icon.menu-toggle").css("display", "block");
         // $(".nav").css("display", "block");
         $("body").css("overflow-x", "hidden");
+
+       
     });
     $(".nav .menu-toggle").on("click", function () {
-        console.log("click");
+   
         $(".menu-toggle").removeClass("open");
         $("div.nav").animate({ top: "-100vh" });
         $(".nav .wrapper-icon.menu-toggle").css("display", "none");
