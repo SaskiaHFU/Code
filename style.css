@@ -1385,6 +1385,7 @@ form input[type="submit"] {
 @media (max-width: 600px) {
     .nav .col-6 {
         width: 100%;
+        height: 100%;
     }
 
     .nav .wrapper-list-left {
@@ -1396,7 +1397,7 @@ form input[type="submit"] {
     }
 
     .nav .wrapper-left {
-        height: 35vh;
+        height: 50vh;
     }
 
     .second .img-wrapper .img-drawing {
