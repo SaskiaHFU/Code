@@ -568,6 +568,20 @@ header .menu-icon {
     font-size: 10px;
 }
 
+.mobile-icon-user svg, .mobile-icon-search svg {
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+
+.mobile-icon-user svg {
+    right: 30px;
+}
+
+.mobile-icon-search svg {
+    right: 90px;
+}
+
 /* Buttons
 ---------------------------------------- */
 
@@ -1276,6 +1290,10 @@ form input[type="submit"] {
 
     #menu {
         padding-top: 50px;
+    }
+
+    .mobile-icon-user svg, .mobile-icon-search svg {
+        display: block;
     }
 }
 
